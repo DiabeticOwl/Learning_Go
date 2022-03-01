@@ -1,0 +1,8 @@
+# Ignores everything...
+**/*
+
+# ...except for...
+!**/*.go
+!**/
+!**/*.md
+!.gitignore
