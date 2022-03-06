@@ -275,10 +275,10 @@ func (gr *greeter) salute() {
 // In this example we add a method to a primitive type.
 type intAdder int
 
-func (a intAdder) add(values ...intAdder) intAdder {
+func (a intAdder) add(values ...intAdder) int {
 	for _, v := range values {
 		a += v
 	}
 
-	return a
+	return int(a)
 }
