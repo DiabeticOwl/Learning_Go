@@ -158,6 +158,7 @@ func main() {
 	fmt.Println(h.add(6, 6))
 
 	fmt.Println("----- Functions | Methods -----")
+	fmt.Println("----- Functions -----")
 }
 
 // Go allows us to have a comma separated list of
