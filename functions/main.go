@@ -13,8 +13,6 @@ func main() {
 
 	sayGreeting("Hello", "Johann")
 
-	fmt.Println("----- Functions -----")
-
 	fmt.Println()
 
 	fmt.Println("----- Functions | With pointers -----")
