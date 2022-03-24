@@ -17,9 +17,7 @@ import (
 )
 
 func main() {
-	x := 42
-	y := "James Bond"
-	c := true
+	x, y, c := 42, "James Bond", true
 
 	fmt.Println(x, y, c)
 	fmt.Println(x)
