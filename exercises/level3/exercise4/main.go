@@ -1,0 +1,29 @@
+// Hands-on exercise #4
+// Create a for loop using this syntax
+// ● for { }
+// Have it print out the years you have been alive.
+
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	actalYear := time.Now().Year()
+	birthYear := 1998
+
+	fmt.Println("--- Years I have been alive ----")
+
+	for {
+		fmt.Println(actalYear)
+		actalYear--
+
+		if actalYear < birthYear {
+			break
+		}
+	}
+
+	fmt.Println("--- Years I have been alive ----")
+}
