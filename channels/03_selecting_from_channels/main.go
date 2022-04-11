@@ -53,7 +53,7 @@ func send(e, o, q chan<- int, n int) {
 // Based from which channel the values comes (even or oddN channels) the
 // "select" clause will determine what block of code will be executed.
 func receive(e, o, q <-chan int) {
-	// Infinite loop since the "quit" channel will be de determing factor
+	// Infinite loop since the "quit" channel will be the determing factor
 	// on when this function will stop reading values from the other channels.
 	for {
 		select {
