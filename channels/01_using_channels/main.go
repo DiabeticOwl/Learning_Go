@@ -17,11 +17,8 @@
 
 // Channels can be bidirectional, meaning that can both recieve and send values,
 // or directional, meaning that can do one of the prior behaviors.
-// The verbs "recive" and "send" are opposite to their literal depiction as a
-// "reciever channel" will not receive values but will allow Go to recive them
-// from it instead.
-// The same happens to a "sender channel" which will allow Go to send the values
-// into it.
+// The verbs "recieve" means that Go will receive values from the channel
+// and "send" will describe a channel that allows Go to send values to it.
 // A bidirectional channel can be converted into a direcional channel but a
 // directional one can not be a bidirectional.
 
