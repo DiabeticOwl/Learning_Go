@@ -1,7 +1,6 @@
 # Level 13 - Testing and benchmarking
 
 ## Hands-on exercise #1
-Hands-on exercise #1
 Start with [this](https://github.com/GoesToEleven/go-programming/tree/master/code_samples/010-ninja-level-thirteen/01/starting-code) code. Get the code ready to BET on the code (add benchmarks, examples, tests).
 Run the following in this order:
 * tests
@@ -19,7 +18,7 @@ Start with [this](https://github.com/GoesToEleven/go-programming/tree/master/cod
 * examples shown in documentation in a web browser
 
 ## Hands-on exercise #3
-Start with this code. Get the code ready to BET on (add benchmarks, examples, tests). Write a table test. Add documentation to the code. Run the following in this order:
+Start with [this](https://github.com/GoesToEleven/go-programming/tree/master/code_samples/010-ninja-level-thirteen/03/01-code-starting) code. Get the code ready to BET on (add benchmarks, examples, tests). Write a table test. Add documentation to the code. Run the following in this order:
 * tests
 * benchmarks
 * coverage
