@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-// Varibles declaration clustering!
+// Variables declaration clustering!
 var (
 	name    string = "Johann"
 	surname string = "Cruz"

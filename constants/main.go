@@ -7,7 +7,7 @@ import (
 // Enumerated constants.
 // iota is a special symbol that,
 // alongside a const block, can
-// inicialize a counter.
+// initialize a counter.
 // In this block of constants x is
 // assign iota and the rest is
 // inferred to be the same type,
@@ -52,7 +52,7 @@ func main() {
 	fmt.Println()
 
 	fmt.Println("----- Untyped Constants -----")
-	// Untyped Contants.
+	// Untyped Constants.
 	// It will infer the type... (int)
 	const myConst2 = 74
 	var a int8 = 6
@@ -63,7 +63,7 @@ func main() {
 	fmt.Println("----- Untyped Constants -----")
 
 	fmt.Println()
-	fmt.Println("----- Enumerades Constants -----")
+	fmt.Println("----- Enumerated Constants -----")
 
 	fmt.Printf("%v, %T\n", x, x)
 	fmt.Printf("%v, %T\n", y, y)
@@ -82,5 +82,5 @@ func main() {
 	fileSize := 89454165489.
 	fmt.Printf("%.2f GBs\n", fileSize/GB)
 
-	fmt.Println("----- Enumerades Constants -----")
+	fmt.Println("----- Enumerated Constants -----")
 }

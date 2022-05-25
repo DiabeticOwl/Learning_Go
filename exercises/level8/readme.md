@@ -10,7 +10,7 @@ Starting with [this](https://play.golang.org/p/b_UuCcZag9) code, unmarshal the J
 
 ## Hands-on exercise #3
 Starting with [this](https://play.golang.org/p/BVRZTdlUZ_) code, encode to JSON the []user sending the results to Stdout.
-Hint: you willneed to use `json.NewEncoder(os.Stdout).encode(v interface{})`.
+Hint: you will need to use `json.NewEncoder(os.Stdout).encode(v interface{})`.
 
 ## Hands-on exercise #4
 Starting with [this](https://play.golang.org/p/H_q75mpmHW) code, sort the []int and []string for each person.

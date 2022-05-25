@@ -12,14 +12,14 @@
 // as I'm aware of) to prefer using channels with short life cycle.
 // Channels without a buffer can not work on a singular goroutine (causing
 // a so called "channel block") since as they are instructed to send the
-// value that they recieve in the instant that they receive it, so multiple
+// value that they receive in the instant that they receive it, so multiple
 // goroutines would be necessary in order to satisfy this design.
 
-// Channels can be bidirectional, meaning that can both recieve and send values,
+// Channels can be bidirectional, meaning that can both receive and send values,
 // or directional, meaning that can do one of the prior behaviors.
-// The verbs "recieve" means that Go will receive values from the channel
+// The verbs "receive" means that Go will receive values from the channel
 // and "send" will describe a channel that allows Go to send values to it.
-// A bidirectional channel can be converted into a direcional channel but a
+// A bidirectional channel can be converted into a directional channel but a
 // directional one can not be a bidirectional.
 
 // In order to declare a directional channel the following sintaxis is required:
@@ -53,13 +53,13 @@ func bar(c <-chan int) {
 // -------- Receiver Function --------
 
 func main() {
-	// The channel "c" is instanciated without a buffer.
+	// The channel "c" is instantiated without a buffer.
 	c := make(chan int)
 
 	// Sender of values function. This will be sent to another gorutine.
 	go foo(c)
 
-	// Reciever of values. As the prior goroutine perfoms in parallel
+	// receiver of values. As the prior goroutine performs in parallel
 	// of the "main" go routine, satisfying the channel that received
 	// a value in it by extracting the expected value.
 	bar(c)

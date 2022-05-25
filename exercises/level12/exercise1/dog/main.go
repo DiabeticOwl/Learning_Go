@@ -1,4 +1,4 @@
-// Pacakage dog provides a type and functionality related to dogs in real life.
+// Package dog provides a type and functionality related to dogs in real life.
 package dog
 
 // Dog is a simple struct that defines a name and age of a dog.
@@ -8,7 +8,7 @@ type Dog struct {
 	YearsOld int
 }
 
-// Years returns the amout of dog years that the attached Dog has.
+// Years returns the amount of dog years that the attached Dog has.
 func (d Dog) Years() int {
 	return d.YearsOld * 7
 }

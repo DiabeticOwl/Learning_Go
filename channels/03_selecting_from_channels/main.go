@@ -6,7 +6,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Printf("---- Program starts succesfully. :D ----\n\n")
+	fmt.Printf("---- Program starts successfully. :D ----\n\n")
 
 	even := make(chan int)
 	oddN := make(chan int)
@@ -20,7 +20,7 @@ func main() {
 	// on the passed channels.
 	receive(even, oddN, quit)
 
-	fmt.Printf("---- Program exited succesfully. :D ----\n")
+	fmt.Printf("---- Program exited successfully. :D ----\n")
 }
 
 // -------- Sender Function --------
@@ -40,7 +40,7 @@ func send(e, o, q chan<- int, n int) {
 	}
 
 	// After all the values have been passed the "quit" channel will receive
-	// a value and that will notify the receive funcion to stop receiving.
+	// a value and that will notify the receive function to stop receiving.
 	q <- 0
 }
 
@@ -53,11 +53,11 @@ func send(e, o, q chan<- int, n int) {
 // Based from which channel the values comes (even or oddN channels) the
 // "select" clause will determine what block of code will be executed.
 func receive(e, o, q <-chan int) {
-	// Infinite loop since the "quit" channel will be the determing factor
+	// Infinite loop since the "quit" channel will be the determining factor
 	// on when this function will stop reading values from the other channels.
 	for {
 		select {
-		// The ":=" syntaxis will declare the variable "v" as the value
+		// The ":=" syntax will declare the variable "v" as the value
 		// received from each channel.
 		case v := <-e:
 			fmt.Println("The following value comes from the 'even' channel:", v)

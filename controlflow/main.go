@@ -58,11 +58,11 @@ func main() {
 	// // Use "panic" only when the application can no longer
 	// // continue, like an zero division.
 	// // "panic" will stop the current function and therefore
-	// // execute all the deffered functions that were called
+	// // execute all the deferred functions that were called
 	// // before the "panic".
 
-	// // If one of the deffered functions is a handler (recover)
-	// // then the rest of the aplication will continue running.
+	// // If one of the deferred functions is a handler (recover)
+	// // then the rest of the application will continue running.
 
 	// fmt.Println("I'm going to panic...")
 	// panic("I don't feel good...")

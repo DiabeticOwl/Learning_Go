@@ -21,7 +21,7 @@ func main() {
 
 	fmt.Println("---- Printing the slices ordered. ----")
 	// Sort's "Ints" and "Strings" methods are inplace,
-	// and theorically work with the addresses of the
+	// and theoretically work with the addresses of the
 	// underlying arrays of the slices internally,
 	// so they don't return anything.
 	sort.Ints(si)

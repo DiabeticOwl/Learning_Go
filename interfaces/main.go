@@ -20,7 +20,7 @@ func main() {
 	fmt.Println("----- Interfaces | With a primitive -----")
 
 	myInt := IntCounter(0)
-	var inc Incrementer = &myInt
+	var inc Incrementor = &myInt
 
 	for i := 0; i < 10; i++ {
 		fmt.Println(inc.Increment())
@@ -33,7 +33,7 @@ func main() {
 	fmt.Println("----- Interfaces | Type Switches and Empty Interfaces -----")
 
 	// An empty interface can work as an intermediate
-	// between the varible that you are instantiating
+	// between the variable that you are instantiating
 	// to and the interfaces implemented in that variable.
 	var i interface{} = "Hola"
 
@@ -85,7 +85,7 @@ func (cw ConsoleWriter) Write(data []byte) (int, error) {
 
 // Any type that has a method associated with it
 // can have a interface implemented in it.
-type Incrementer interface {
+type Incrementor interface {
 	Increment() int
 }
 

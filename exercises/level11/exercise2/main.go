@@ -43,7 +43,7 @@ func toJSON(a interface{}) ([]byte, error) {
 	// // This following line is just for testing purposes.
 	// err = fmt.Errorf("hi")
 	if err != nil {
-		err = fmt.Errorf("The JSON could not be Marshalized - %v", err)
+		err = fmt.Errorf("The JSON could not be Marshalled - %v", err)
 		return bs, err
 	}
 

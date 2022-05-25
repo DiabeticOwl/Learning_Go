@@ -43,7 +43,7 @@ func (a byAge) Less(i, j int) bool { return a[i].age < a[j].age }
 // ---------------- Ordering by age. ----------------
 
 // ---------------- Ordering by full name. ----------------
-// Here we are modifing the behaviors so the "Sort" method
+// Here we are modifying the behaviors so the "Sort" method
 // uses our logic to sort by the full name (first + " " + last)
 // of the "person" type.
 // Notice how the behaviors have the same name but by their
@@ -97,7 +97,7 @@ func main() {
 	// Converting it to the typed slice in which we attached
 	// our custom "sort" package's behaviors, so then the
 	// "Sort" method (which expects an "Interface" value)
-	// can work with our behaciors.
+	// can work with our behaviors.
 	// This will sort the array as we desire.
 	sort.Sort(byAge(people))
 

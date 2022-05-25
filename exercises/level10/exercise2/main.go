@@ -13,7 +13,7 @@ import (
 
 // https://play.golang.org/p/oB-p3KMiH6
 func firstCodePart() {
-	// This line creates the error because it instanciates a sender only channel
+	// This line creates the error because it instantiates a sender only channel
 	// and later tried to receive a value from it.
 	// cs := make(chan<- int)
 
@@ -31,7 +31,7 @@ func firstCodePart() {
 
 // https://play.golang.org/p/_DBRueImEq
 func secondCodePart() {
-	// This line creates the error because it instanciates a receiver only channel
+	// This line creates the error because it instantiates a receiver only channel
 	// and later tried to send a value to it.
 	// cr := make(<-chan int)
 

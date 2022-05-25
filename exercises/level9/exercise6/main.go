@@ -15,5 +15,5 @@ func main() {
 	fmt.Println("Arch:", runtime.GOARCH)
 	fmt.Println("OS:", runtime.GOOS)
 	fmt.Println("Number of CPUs:", runtime.NumCPU())
-	fmt.Println("Number of subroutunes:", runtime.NumGoroutine())
+	fmt.Println("Number of subroutines:", runtime.NumGoroutine())
 }

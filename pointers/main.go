@@ -7,8 +7,8 @@ func main() {
 	fmt.Println("----- Pointers -----")
 	fmt.Println("----- Pointers | Primitives -----")
 
-	// Primitives and slices, when assgined to another
-	// variable, creates a copy of themselves insted
+	// Primitives and slices, when assigned to another
+	// variable, creates a copy of themselves instead
 	// of point to the same object.
 	a := 44
 	b := a
@@ -41,7 +41,7 @@ func main() {
 	// printed for both variables.
 	fmt.Println(&c, d)
 
-	// By using the "*" symbol (or "derefencing operator")
+	// By using the "*" symbol (or "dereferencing operator")
 	// before the d variable we can find the value that
 	// is located on the address in memory in question.
 	fmt.Println(c, *d)
@@ -59,7 +59,7 @@ func main() {
 	fmt.Println("----- Pointers | Pointer Arithmetics -----")
 
 	// In this section we can observe an example of
-	// "Pointers Aritmetics" not working in Go due
+	// "Pointers Arithmetics" not working in Go due
 	// to the decisions of maintaining this language
 	// simple. For this kind of operations, the
 	// package "unsafe" will become useful.
@@ -69,7 +69,7 @@ func main() {
 	// the fact that the addresses are very close
 	// is visible.
 	// In C, and other languages, would be possible
-	// to add or substract to these addresses in
+	// to add or subtract to these addresses in
 	// order to very optimally point to another
 	// value in memory.
 	arr := [3]int{1, 2, 3}
@@ -116,7 +116,7 @@ func main() {
 	fmt.Println((*ms2).foo)
 
 	// The syntax described before sets a limit in
-	// Go's code readibility so the compiler
+	// Go's code readability so the compiler
 	// identifies what we are trying to do and
 	// dereference the pointer for us without
 	// the need of the syntax.

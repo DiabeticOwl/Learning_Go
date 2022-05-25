@@ -33,10 +33,10 @@ func main() {
 	fmt.Println()
 
 	fmt.Println("----- Arrays | Trying to reference -----")
-	// Arrays in Go are viewd as unique values,
+	// Arrays in Go are viewed as unique values,
 	// therefore assigning one to another variable
 	// will automatically create a copy of
-	// the passed array, instead of reffering
+	// the passed array, instead of referring
 	// to the initial one.
 	a := [...]float32{2.09, 3., 8.1}
 	b := a
@@ -65,14 +65,14 @@ func main() {
 	fmt.Println()
 
 	fmt.Println("----- Slices -----")
-	// For avoidng to have to give a size to our
+	// For avoiding to have to give a size to our
 	// array we can use what are called "slices".
 	// They do not have the behavior of arrays
 	// in which Go, by default, creates a new
 	// copy instead of pointing to a space in memory.
 	// Referring to the inicial slice.
 	// This difference comes from the fact that
-	// a slice will, behind the scences, create an array.
+	// a slice will, behind the scenes, create an array.
 	e := []int{5, 8, 4}
 	f := e
 

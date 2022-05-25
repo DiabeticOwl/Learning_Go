@@ -11,14 +11,14 @@ import (
 )
 
 func main() {
-	actalYear := time.Now().Year()
+	actualYear := time.Now().Year()
 	birthYear := 1998
 
 	fmt.Println("--- Years I have been alive ----")
 
-	for actalYear >= birthYear {
-		fmt.Println(actalYear)
-		actalYear--
+	for actualYear >= birthYear {
+		fmt.Println(actualYear)
+		actualYear--
 	}
 
 	fmt.Println("--- Years I have been alive ----")

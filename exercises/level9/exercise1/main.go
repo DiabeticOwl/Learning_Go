@@ -40,14 +40,14 @@ func main() {
 	fmt.Println("\tArch:", runtime.GOARCH)
 	fmt.Println("\tOS:", runtime.GOOS)
 	fmt.Println("\tNumber of CPUs:", runtime.NumCPU())
-	fmt.Println("\tNumber of subroutunes:", runtime.NumGoroutine())
+	fmt.Println("\tNumber of subroutines:", runtime.NumGoroutine())
 	fmt.Println("------------------------- Start -------------------------")
 
 	fmt.Println()
 
-	// Here we say to the WaitGroup that there will be two additional goroutunes.
+	// Here we say to the WaitGroup that there will be two additional goroutines.
 	wg.Add(2)
-	// Here we say Go to create the goroutunes, each with the "go" keyword.
+	// Here we say Go to create the goroutines, each with the "go" keyword.
 	go foo()
 	go bar()
 
@@ -55,15 +55,15 @@ func main() {
 
 	fmt.Println("------------------------- Middle -------------------------")
 	fmt.Println("\tNumber of CPUs:", runtime.NumCPU())
-	fmt.Println("\tNumber of subroutunes:", runtime.NumGoroutine())
+	fmt.Println("\tNumber of subroutines:", runtime.NumGoroutine())
 	fmt.Println("------------------------- Middle -------------------------")
 
 	// Here we say to the WaitGroup to make the application wait until the functions
-	// in the goroutunes are "done".
+	// in the goroutines are "done".
 	wg.Wait()
 
 	fmt.Println("------------------------- End -------------------------")
 	fmt.Println("\tNumber of CPUs:", runtime.NumCPU())
-	fmt.Println("\tNumber of subroutunes:", runtime.NumGoroutine())
+	fmt.Println("\tNumber of subroutines:", runtime.NumGoroutine())
 	fmt.Println("------------------------- End -------------------------")
 }

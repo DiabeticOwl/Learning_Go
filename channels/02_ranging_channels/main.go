@@ -36,13 +36,13 @@ func bar(c <-chan int) {
 // -------- Receiver Function --------
 
 func main() {
-	// The channel "c" is instanciated without a buffer.
+	// The channel "c" is instantiated without a buffer.
 	c := make(chan int)
 
 	// Sender of values function. This will be sent to another gorutine.
 	go foo(c, 25)
 
-	// Reciever of values. Since the prior goroutine perfoms in parallel
+	// Receiver of values. Since the prior goroutine performs in parallel
 	// of the "main" goroutine, as values are added to the channel, this
 	// function is extracting and performing the desired behavior with them.
 	bar(c)

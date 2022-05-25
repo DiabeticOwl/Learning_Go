@@ -62,7 +62,7 @@ func main() {
 
 	d, err := divide(5.0, 4.36)
 
-	// This is a good example of a controlflow that
+	// This is a good example of a control flow that
 	// doesn't "panics" and that is more used.
 	if err != nil {
 		fmt.Println(err)
@@ -160,7 +160,7 @@ func main() {
 }
 
 // Go allows us to have a comma separated list of
-// paramaters.
+// parameters.
 // It also gives us the ability of list various
 // parameters of the same type so the code would be
 // cleaner.
@@ -170,7 +170,7 @@ func sayGreeting(greeting, name string) {
 
 func sayGreetingWithPointers(greeting, name *string) {
 	// After receiving the pointer variables we can
-	// use them as we are used to by derefering them.
+	// use them as we are used to by deferring them.
 	fmt.Println(*greeting, *name)
 
 	// This change here will after the variable
@@ -187,7 +187,7 @@ func sayGreetingWithPointers(greeting, name *string) {
 // parameter will encapsulate all variables with
 // the same type in a slice.
 // If we have multiple types of parameters the
-// variadic paramters must be put at the end.
+// variadic parameters must be put at the end.
 func sum(msg string, values ...int) {
 	fmt.Println(values)
 
@@ -253,7 +253,7 @@ type greeter struct {
 // Methods in Go use "receivers" which are the
 // connection between an object type and the
 // function itself.
-// The syntaxis for this is the name of the
+// The syntax for this is the name of the
 // receiver and its type inside parenthesis.
 func (gr greeter) greet() {
 	fmt.Println(gr.greeting, gr.name)
@@ -263,7 +263,7 @@ func (gr greeter) greet() {
 // of the object used as a receiver.
 // This can be modified by converting the receiver
 // into a pointer receiver.
-// Here, the "*" symbol will dereference the reveiver
+// Here, the "*" symbol will dereference the receiver
 // variable on its own in the entire scope of the method.
 func (gr *greeter) salute() {
 	fmt.Println(gr.greeting, gr.name)

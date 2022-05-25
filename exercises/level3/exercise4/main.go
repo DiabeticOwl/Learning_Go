@@ -11,16 +11,16 @@ import (
 )
 
 func main() {
-	actalYear := time.Now().Year()
+	actualYear := time.Now().Year()
 	birthYear := 1998
 
 	fmt.Println("--- Years I have been alive ----")
 
 	for {
-		fmt.Println(actalYear)
-		actalYear--
+		fmt.Println(actualYear)
+		actualYear--
 
-		if actalYear < birthYear {
+		if actualYear < birthYear {
 			break
 		}
 	}

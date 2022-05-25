@@ -1,4 +1,4 @@
-// mymath is a package that describes an implementantion of the centered average. This is a subset of the moving average calculation.
+// mymath is a package that describes an implementation of the centered average. This is a subset of the moving average calculation.
 // More information can be found here:
 // https://en.wikipedia.org/wiki/Moving_average
 package mymath

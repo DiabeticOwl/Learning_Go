@@ -1,13 +1,13 @@
 // Hands-on exercise #3
-// 	● Using goroutines, create an incrementer program
-// 		○ have a variable to hold the incrementer value
+// 	● Using goroutines, create an incrementor program
+// 		○ have a variable to hold the incrementor value
 // 		○ launch a bunch of goroutines
 // 			■ each goroutine should
-// 				● read the incrementer value
+// 				● read the incrementor value
 // 					○ store it in a new variable
 // 				● yield the processor with runtime.Gosched()
 // 				● increment the new variable
-// 				● write the value in the new variable back to the incrementer
+// 				● write the value in the new variable back to the incrementor
 // 				  variable
 // 	● use waitgroups to wait for all of your goroutines to finish
 // 	● the above will create a race condition.

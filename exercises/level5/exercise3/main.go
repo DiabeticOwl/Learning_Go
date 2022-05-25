@@ -38,7 +38,7 @@ type sedan struct {
 
 func main() {
 	mytruck := truck{
-		// Since we declare the "fourWheel" field by compisite
+		// Since we declare the "fourWheel" field by composite
 		// literal it is required to declare the field "vehicle"
 		// the same way.
 		vehicle: vehicle{

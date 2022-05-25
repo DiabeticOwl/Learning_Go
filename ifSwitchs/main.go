@@ -29,7 +29,7 @@ func main() {
 	// Boolean operators are the same as Python.
 	// Logical operators are || for or, && for and.
 
-	// Go has a concept called short circuting in
+	// Go has a concept called short circuiting in
 	// which will stop evaluating parts of an if
 	// bool statement on the moment that the entire
 	// bool would be logically speaking, true.
@@ -51,7 +51,7 @@ func main() {
 	// Here it is saying that if the division between
 	// the number passed and itself to the square root
 	// and the to the power of 2 is a number that,
-	// after substracted 1 (as equal numbers division
+	// after subtracted 1 (as equal numbers division
 	// will result in 1), its absolute value is less
 	// than a threshold then the statement is true.
 	if math.Abs(myNum/math.Pow(math.Sqrt(myNum), 2)-1) < 0.0001 {

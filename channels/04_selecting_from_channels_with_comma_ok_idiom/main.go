@@ -6,7 +6,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Printf("---- Program starts succesfully. :D ----\n\n")
+	fmt.Printf("---- Program starts successfully. :D ----\n\n")
 
 	even := make(chan int)
 	oddN := make(chan int)
@@ -20,7 +20,7 @@ func main() {
 	// on the passed channels.
 	receive(even, oddN, quit)
 
-	fmt.Printf("---- Program exited succesfully. :D ----\n")
+	fmt.Printf("---- Program exited successfully. :D ----\n")
 }
 
 // -------- Sender Function --------
@@ -54,21 +54,21 @@ func send(e, o, q chan<- int, n int) {
 // Based from which channel the values comes (even or oddN channels) the
 // "select" clause will determine what block of code will be executed.
 func receive(e, o, q <-chan int) {
-	// Infinite loop since the "quit" channel will be the determing factor
+	// Infinite loop since the "quit" channel will be the determining factor
 	// on when this function will stop reading values from the other channels.
 	for {
 		select {
-		// The ":=" syntaxis will declare the variable "v" as the value
+		// The ":=" syntax will declare the variable "v" as the value
 		// received from each channel.
 		case v := <-e:
 			fmt.Println("The following value comes from the 'even' channel:", v)
 		case v := <-o:
 			fmt.Println("The following value comes from the 'oddN' channel:", v)
 		case _, ok := <-q:
-			// A receiver channel will return the corresponing value and a
+			// A receiver channel will return the corresponding value and a
 			// boolean normally called "ok" as the state of it
 			// (open or closed i.e. true or false).
-			// This allows us to describe more bahaviors if needed.
+			// This allows us to describe more behaviors if needed.
 			if !ok {
 				fmt.Printf("The 'quit' channel closed, therefore I will stop looking for more values.\n\n")
 				return

@@ -12,17 +12,17 @@ type Doctor struct {
 }
 
 // Go doesn't have inheritance of structs but it has a
-// composition that relates one's atributes to another.
+// composition that relates one's attributes to another.
 // This is called Embedding.
 type Animal struct {
 	// Tags are like descriptions
-	// strings related to an atribute.
+	// strings related to an attribute.
 	Name   string `required,max:"100"`
 	Origin string
 }
 
 type Bird struct {
-	// This reads as "Bird has Animal caracteristics"
+	// This reads as "Bird has Animal characteristic"
 	// and not as "Bird is Animal".
 	Animal
 	SpeedKPH float32
@@ -32,7 +32,7 @@ type Bird struct {
 func main() {
 	fmt.Println("----- Maps -----")
 
-	// Alternative declaration for an empy map:
+	// Alternative declaration for an empty map:
 	// statePopulations := make(map[string]int{})
 	statePopulations := map[string]int{
 		"California":   39237836,
@@ -90,7 +90,7 @@ func main() {
 
 	fmt.Println("----- Structs | Anonymous Structs -----")
 
-	// This anonymous strutcs are recommended to be used
+	// This anonymous structs are recommended to be used
 	// as a quick and short-lived variable inside a script.
 	// Creating another anonymous struct based on an initial
 	// one won't point to the original in memory.
