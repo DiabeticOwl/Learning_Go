@@ -1,8 +1,8 @@
 # Ignores everything...
-**/*
+*
 
 # ...except for...
-!**/*.go
+!*.go
 !**/
-!**/*.md
+!*.md
 !.gitignore

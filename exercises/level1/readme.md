@@ -50,7 +50,7 @@ TYPE “x”
     ```
         type hotdog int
 
-        var x hotgod
+        var x hotdog
         var y int
     ```
 2. in func main
